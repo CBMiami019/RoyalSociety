@@ -19,7 +19,7 @@
 		5323E6B60EAFCA7E003A9687 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5323E6B50EAFCA7E003A9687 /* QTKit.framework */; };
 		53E3CDFC0E86099300238D2B /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53E3CDFB0E86099300238D2B /* Carbon.framework */; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
-		F0BEAC5915F128AD00E76782 /* Diamond.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0BEAC5815F128AD00E76782 /* Diamond.cpp */; };
+		F076B2DB16011A9A00572108 /* Diamond.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F076B2DA16011A9A00572108 /* Diamond.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,8 +41,8 @@
 		53E3CDFB0E86099300238D2B /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* RoyalSociety.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoyalSociety.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F0BEAC5715F128AD00E76782 /* Diamond.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Diamond.h; sourceTree = "<group>"; };
-		F0BEAC5815F128AD00E76782 /* Diamond.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Diamond.cpp; sourceTree = "<group>"; };
+		F076B2D916011A9000572108 /* Diamond.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Diamond.h; path = ../include/Diamond.h; sourceTree = SOURCE_ROOT; };
+		F076B2DA16011A9A00572108 /* Diamond.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Diamond.cpp; path = ../src/Diamond.cpp; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,9 +69,8 @@
 		080E96DDFE201D6D7F000001 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				F076B2DA16011A9A00572108 /* Diamond.cpp */,
 				00BAE6590E7ED9C10018A608 /* RoyalSocietyApp.cpp */,
-				F0BEAC5715F128AD00E76782 /* Diamond.h */,
-				F0BEAC5815F128AD00E76782 /* Diamond.cpp */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -126,6 +125,7 @@
 		29B97315FDCFA39411CA2CEA /* Headers */ = {
 			isa = PBXGroup;
 			children = (
+				F076B2D916011A9000572108 /* Diamond.h */,
 				32CA4F630368D1EE00C91783 /* RoyalSociety_Prefix.pch */,
 			);
 			name = Headers;
@@ -204,7 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00BAE65A0E7ED9C10018A608 /* RoyalSocietyApp.cpp in Sources */,
-				F0BEAC5915F128AD00E76782 /* Diamond.cpp in Sources */,
+				F076B2DB16011A9A00572108 /* Diamond.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

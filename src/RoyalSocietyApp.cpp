@@ -36,7 +36,7 @@ void RoyalSocietyApp::prepareSettings(Settings* settings){
 void RoyalSocietyApp::setup()
 {
 	Vec2f trans = (kAppWidth/2.0f)*kUnitX + (kAppHeight/2.0f)*kUnitY;
-	diamond_list_ = new Diamond(4, trans, kAppHeight/2.0f);
+	diamond_list_ = new Diamond(4, trans, Vec2f(0,0), kAppHeight/2.0f);
 	frame_number_ = 0;
 }
 

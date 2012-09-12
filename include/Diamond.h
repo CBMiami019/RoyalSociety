@@ -14,7 +14,7 @@
 
 class Diamond{
 public:
-	Diamond(int depth, ci::Vec2f position, float radius);
+	Diamond(int depth, ci::Vec2f position, ci::Vec2f offset, float radius);
 	
 	//Pointers to my siblings
 	Diamond* next_;
@@ -23,7 +23,8 @@ public:
 	//Pointer to the sentinel for my list of children.
 	Diamond* children_;
 	
-	ci::Vec2f position_;
+	ci::Vec2f offset_; //From parent position
+	ci::Vec2f position_; //position_ == parent's position + offset_
 	float radius_;
 	
 	ci::Vec2f velocity_;
